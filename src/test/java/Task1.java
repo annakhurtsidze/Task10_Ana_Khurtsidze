@@ -10,7 +10,6 @@ public class Task1 {
         List<String> filteredNames = names.stream().filter(name -> name.contains("e")).toList();
 
 
-       for(String name : filteredNames)
-           System.out.println(name);
+       filteredNames.forEach(System.out::println);
     }
 }
